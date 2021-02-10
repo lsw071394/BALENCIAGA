@@ -1,53 +1,242 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BALENCIAGA</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>SmartReport_main_page</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="https://use.typekit.net/gje1saw.css">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&family=Noto+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
 </head>
 
-
 <body>
-    <div id="wrap">
-        <header>
-            <nav>
-                <div class="float_left"><a href="./subPage1.html"><h3>Designed by</h3></a></div>
-                <div class="float_left"><a href="./subPage2.html"><h3>20ss LookBook</h3></a></div>
-            </nav>  
-        </header>
-        <main>
-            <div class="image">
-                <img src="./img/2020.png">
-                <div>BALENCIAGA</div>
+
+    <header>
+        <nav>
+            <div class="nav-header">
+                <div class="nav-wrap">
+                    <h2>전체메뉴</h2>
+                    <div class="search-box">
+                        <input type="text" placeholder="검색">
+                        <button><img src="./img/icon_search.svg" alt=""></button>
+                    </div>
+                </div>
             </div>
-        </main>
-        <div id="navibar"></div>
-        <div id="section">
-            <div id="section1">
-                <img src="./img/paris.jpg" alt="2020">
-            </div>
-            <div id="section2">
-                <h1>Flagship Store</h1>
+            <div class="nav-body">
+                <h2>MY</h2>
+                <div class="nav-line"></div>
                 <ul>
-                    <li class="zoom">France</li>
-                    <li class="zoom">United States</li>
-                    <li class="zoom">South Korea</li>
-                    <li class="zoom">Italy</li>
-                    <li class="zoom">Hong Kong SAR</li>
+                    <li>
+                        <a href="javascript:void(0)">계좌</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">거래 내역</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">챌린지</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">고정 지출 내역</a>
+                    </li>
+                </ul>
+                <h2>리포트</h2>
+                <div class="nav-line"></div>
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)">카테고리별 소비 내역</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">카드별 이용 실적</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">월별 소비 내역</a>
+                    </li>
                 </ul>
             </div>
+        </nav>
+        <div class="black_bg"></div>
+        <div class="inner-wrap">
+            <div class="header-wrap">
+                <ul class="menu">
+                    <a class="active" href="javascript:void(0)">
+                        <li>MY</li>
+                    </a>
+                    <a href="javascript:void(0)">
+                        <li>리포트</li>
+                    </a>
+                </ul>
+                <div class="util">
+                    <div class="notice">
+                        <a href="javascript:void(0)">
+                            <img src="./img/icon_notice.svg" alt="notice">
+                        </a>
+                    </div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <footer>
-            <h3>©2020BALENCIAGA</h3>
-        </footer>     
-    </div>
-   
+    </header>
+    <section>
+        <article class="main-visual">
+            <div class="inner-wrap">
+                <span class="emogi"><img src="./img/emti.png" alt=""> 소비상태 양호</span>
+                <div class="main-text">
+                    <span>손민희님,</span>
+                    <span>챌린지 달성률은</span>
+                    <span class="percent">65%</span>입니다!
+                </div>
+                <div class="prog">
+                    <div class="progs" id="progressing"></div>
+                </div>
+                <div class="prog-text">
+                    <span>160,000원</span>
+                    <span>350,000원</span>
+                </div>
+            </div>
+        </article>
+        <article class="cont">
+            <div class="inner-wrap">
+                <div class="box box_1">
+                    <div class="tit-box">
+                        <div class="tit">
+                            <h2>계좌</h2>
+                            <div class="circle">4</div>
+                        </div>
+                        <span>81,213,002원</span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="text-box">
+                        <div class="bank">
+                            <img src="./img/kb-logo.png" alt="">
+                            <h3>국민은행 급여통장</h3>
+                        </div>
+                        <span>503,001원</span>
+                    </div>
+                    <div class="text-box">
+                        <div class="bank">
+                            <img src="./img/kb-logo.png" alt="">
+                            <h3>신한은행 청년통장...</h3>
+                        </div>
+                        <span>80,503,001원</span>
+                    </div>
+                    <div class="text-box">
+                        <div class="bank">
+                            <img src="./img/kb-logo.png" alt="">
+                            <h3>신한은행 적금통장</h3>
+                        </div>
+                        <span>207,000원</span>
+                    </div>
+                    <div class="arrco-btn">
+                        <span>더보기</span>
+                    </div>
+                </div>
 
+                <div class="box-tit">
+                    <h2>최근 내역</h2>
+                    <span>모두 보기</span>
+                </div>
+                <div class="box box_2">
+                    <div class="pay-box">
+                        <div class="left-box">
+                            <img src="./img/pay-1.png" alt="coffe">
+                            <div class="pay">
+                                <h3>스타벅스 코리아</h3>
+                                <span>15:55</span>
+                                <p>본인 4519</p>
+                            </div>
+                        </div>
+                        <span>-32,000원</span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="pay-box">
+                        <div class="left-box">
+                            <img src="./img/pay-2.png" alt="coffe">
+                            <div class="pay">
+                                <h3>㈜우아한 형제</h3>
+                                <span>13:30</span>
+                                <p>본인 4519</p>
+                            </div>
+                        </div>
+                        <span>-12,000원</span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="pay-box">
+                        <div class="left-box">
+                            <img src="./img/pay-3.svg" alt="coffe">
+                            <div class="pay">
+                                <h3>예스예스주식회사…</h3>
+                                <span>13:00</span>
+                                <p>본인 4519</p>
+                            </div>
+                        </div>
+                        <span>-9,800원</span>
+                    </div>
+                    <div class="line"></div>
+                    <div class="pay-box">
+                        <div class="left-box">
+                            <img src="./img/pay-3.svg" alt="coffe">
+                            <div class="pay">
+                                <h3>엄마</h3>
+                                <span>12:00</span>
+                                <p>본인 4519</p>
+                            </div>
+                        </div>
+                        <span>+888,888원</span>
+                    </div>
+                    <div class="line"></div>
+                </div>
+                <div class="box box_3">
+                    <div class="tit-box">
+                        <div class="tit">
+                            <h2>고정 지출 내역</h2>
+                        </div>
+                        <span>자세히</span>
+                    </div>
+                    <div class="fix_pay">
+                        <p>납부된 고정 지출</p>
+                        <span>98,900원</span>
+                    </div>
+                    <div class="prog">
+                        <div class="progs" id="progressing"></div>
+                    </div>
+                    <div class="prog-text">
+                        <p>총 고정 지출</p>
+                        <span>398,900원</span>
+                    </div>
+                    <div class="radius-box">
+                        지출 예정
+                    </div>
+                    <div class="text-box">
+                        <div class="left-box">
+                            <span>25일</span>
+                            <img src="./img/fix-1.png" alt="">
+                            <p>신한 첫 급여 드림...</p>
+                        </div>
+                        <span>200,000원</span>
+                    </div>
+                    <div class="text-box">
+                        <div class="left-box">
+                            <span>25일</span>
+                            <img src="./img/fix-1.png" alt="">
+                            <p>신한 첫 급여 드림...</p>
+                        </div>
+                        <span>200,000원</span>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+    </section>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
+
 </html>
