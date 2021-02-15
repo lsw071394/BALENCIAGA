@@ -5,6 +5,7 @@ header{background-color: #fff;box-shadow: 0 3px 8px #CDCDCD1A;}
 .header-wrap > .menu a.active{color: #32C5FF;}
 .header-wrap > .util .hamburger span{background-color: #262626;}
 .month-slide{width: 100%; height: 60px; border-bottom: 1px solid #EFEEEE;background-color: #f7f7f7;}
+
 .header-wrap > .util .white-wrap .notice{display: inline-block;width: 25px; height: 25px; margin-right: 20px; box-sizing: unset; background-image: url(../img/icon_notice_black.png);}
 .header-wrap > .util .white-wrap .notice.on{
     display: inline-block;width: 25px; height: 25px; margin-right: 20px; box-sizing: unset; background-image: url(../img/icon_notice.png);
