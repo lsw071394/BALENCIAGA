@@ -1,5 +1,5 @@
-html,body{font-family: 'NanumSquare', sans-serif; }
-body{width: 100%; height: 100vh; padding-top: 64px;background-color:#32C5FF;}
+
+body{background-color:#32C5FF;}
 
 nav{ height: 100%;width: 312px;position: fixed;z-index: 3;top: 0;right: 0;background-color: #fff;overflow-x: hidden;transition: all 0.3s ease-in-out;box-shadow: -10px 0 10px #00000014 ; transform: translateX(312px);}
 nav.act{transform: translateX(0);}
@@ -35,7 +35,7 @@ h2{display: inline; font-size: 18px; line-height: 21px; color: #262626;font-weig
 h3{color: #262626;}
 span,p{color: #262626;}
 .box{width: 100%; background-color: #fff; border-radius: 8px; box-shadow: 0 3px 10px #00000014;overflow: hidden;}
-.line{width: 100%; height: 1px; background-color: #DDDDDD;}
+.line{width: 100%; height: 1px; background-color: #F7F7F7;}
 .tit-box{width: 100%; display: flex; justify-content: space-between; align-items: center;}
 .tit-box > span{line-height: 18px;}
 .tit-box span:after{content: ''; display: inline-block; width: 6px; height: 6px; border: 1px solid ; border-left: none; border-bottom: none;  transform:translateY(-2px) rotate(45deg); margin-left: 4px;}
@@ -89,7 +89,7 @@ font-weight: 300;}
 .text-box > .bank >img{width: 25px; margin-right: 8px;}
 .box_1 > .arrco-btn{text-align: center; }
 .box_1 > .arrco-btn> span{color: #707070;cursor: pointer;}
-
+.box_1 > .arrco-btn> span:after{content: ''; display: inline-block; width: 6px; height: 6px; border: 1px solid ; border-left: none; border-bottom: none;  transform:translateY(-4px) rotate(135deg); margin-left: 6px;}
 
 .box-tit{display: flex; justify-content: space-between; margin: 32px 4px 16px 4px;}
 
@@ -97,7 +97,7 @@ font-weight: 300;}
 
 
 .box_2{height: 324px;padding: 4px 20px 0 20px; font-weight: 400;}
-.box_2 > .line{width: 100%; height: 1px; background-color: #F7F7F7;margin-bottom: 20px;}
+.box_2 > .line{margin-bottom: 20px;}
 
 .pay-box{height: 59px; margin-top: 20px; display: flex; justify-content: space-between;}
 .pay-box > .left-box img{width: 30px; }
