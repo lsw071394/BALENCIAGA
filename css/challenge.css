@@ -15,7 +15,7 @@ header{background-color: #fff;box-shadow: 0 3px 8px #CDCDCD1A;}
 .select-num{display: inline-block;margin-left: 8px;font-size: 18px;}
 .select-num span{color: #3262FF;}
 
-.box_1{height: 220px;margin-top: 24px; padding-top:24px;}
+.box_1{height: 220px; margin-top: 24px; padding-top:24px;}
 .gray-on{filter: grayscale(1);}
 
 
@@ -32,7 +32,7 @@ header{background-color: #fff;box-shadow: 0 3px 8px #CDCDCD1A;}
 .pay-box > span.on{color:#FC3145}
 
 
-.prog{margin-top: 24px; margin-bottom: 32px; width: 100%;}
+.prog{height: 12px; margin-top: 24px; margin-bottom: 32px; width: 100%;}
 .progs{background: #32C5FF;}
 .prog.gray-on > .progs{border-radius: 50px;}
 .prog-txt{display: flex; justify-content: space-between; margin: 0 4px 20px 4px; color: #262626;}

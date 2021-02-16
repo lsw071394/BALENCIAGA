@@ -30,7 +30,7 @@ header{background-color: #fff;box-shadow: 0 3px 8px #CDCDCD1A;}
 .main-visual{ width: 100%;background-color: #F7F7F7;text-align: center;}
 .main-visual > span{display: inline-block; font-size: 14px; margin-top: 40px;}
 .main-visual p{font-size: 16px;margin: 5px 0 13px 0;}
-.main-visual p >span{font-size: 18px; color: #F03E3E;}
+.main-visual p >span{font-size: 18px; color: #F03E3E;padding: 0 3px;}
 .main-visual h3{font-weight: 600;font-size: 30px;margin-bottom: 40px;}
 .main-visual img{width: 30px;}
 
