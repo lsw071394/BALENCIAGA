@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>SmartReport_main_page</title>
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/card-pay.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-header">
+                <div class="nav-wrap">
+                    <h2>전체메뉴</h2>
+                    <div class="search-box">
+                        <input type="text" placeholder="검색">
+                        <button><img src="./img/icon_search.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-body">
+                <h2>MY</h2>
+                <div class="nav-line"></div>
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)">계좌</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">거래 내역</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">챌린지</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">고정 지출 내역</a>
+                    </li>
+                </ul>
+                <h2>리포트</h2>
+                <div class="nav-line"></div>
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)">카테고리별 소비 내역</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">카드별 이용 실적</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">월별 소비 내역</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="black_bg"></div>
+        <div class="inner-wrap">
+            <div class="header-wrap">
+                <a href="javascript:history.back();">
+                    <span class="prev"></span>
+                </a>
+
+                <h2>알림</h2>
+                <div class="util">
+                    <div class="white-wrap">
+                        <div class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+    </header>
+
+    <article class="cont">
+        <div class="inner-wrap">
+            <div class="pay-area">
+                <div class="pay-tit-box">
+                    <span>02.01 월</span>
+                </div>
+                <div class="box box_2">
+                    <p>지난 달 리포트가 완성되었어요!</p>
+                    <span>33분전</span>
+                </div>
+                <div class="box box_2">
+                    <p>지난 달 리포트가 완성되었어요!</p>
+                    <span>33분전</span>
+                </div>
+            </div>
+            <div class="pay-area">
+                <div class="pay-tit-box">
+                    <span>01.31 일</span>
+                </div>
+                <div class="box box_2">
+                    <p>아끼기 챌린지에 성공하셨어요!</p>
+                    <span>오후 10:00</span>
+                </div>
+                <div class="box box_2">
+                    <p>소비상태 변경 : <span class="green">양호</span><img src="./img/emti.png" alt=""> </p>
+                    <span>오전 08:00</span>
+                </div>
+                <div class="box box_3">
+                    <p>민희님 <span class="blue">맞춤 카드</span>를 추천해드려요~</p>
+                    <div class="card-recom">
+                        <img src="./img/card.png" alt="">
+                        <div class="text">
+                            <h3>신한카드 Deep Oil</h3>
+                            <p>주유소 10% 할인<br>편의점/택시 5% 할인</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pay-area">
+                <div class="pay-tit-box">
+                    <span>01.30 토</span>
+                </div>
+                <div class="box box_2">
+                    <p>소비상태 변경 : <span class="red">경고</span><img src="./img/emti-red.png" alt=""> </p>
+                    <span>오전 08:00</span>
+                </div>
+                <div class="box box_2">
+                    <p>쇼핑줄이기 챌린지에 실패하셨어요.</p>
+                    <span>오전 08:30</span>
+                </div>
+            </div>
+        </div>
+    </article>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

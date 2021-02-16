@@ -54,7 +54,7 @@ header{position: fixed;width: 100%; top: 0; left: 0; background-color: #32C5FF;
 /* .header-wrap > .menu a.active li:before{content: ''; display: block; width: 4px; height: 4px; border-radius: 50%; background-color: #F7F7F7; position: absolute; top: -16px; left: 50%;  transform: translateX(-50%);} */
 .header-wrap > .menu li{float: left; margin-right: 20px;line-height: 27px;}
 .header-wrap > .util{margin-bottom: 4px;z-index: 3;}
-.header-wrap > .util > .notice{display: inline-block;width: 25px; height: 25px; margin-right: 20px; box-sizing: unset; background-image: url(../img/icon_notice.png);}
+.header-wrap > .util .notice{display: inline-block;width: 25px; height: 25px; margin-right: 20px; box-sizing: unset; background-image: url(../img/icon_notice.png);}
 
 
 .header-wrap > .util > .hamburger span{background-color: #F7F7F7;}

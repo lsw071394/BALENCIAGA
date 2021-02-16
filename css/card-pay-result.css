@@ -1,0 +1,65 @@
+body{background-color: #F7F7F7;}
+
+header{background-color: #fff;box-shadow: 0 3px 8px #CDCDCD1A;}
+.line{width: 100%; height: 1px; background-color: #EFEEEE;}
+.inner-wrap{display: block;}
+.header-wrap > a>  span{display: block; width: 12px;height: 12px; border: 1px solid #262626; border-bottom: none;border-left: none; }
+.prev{margin-left: 4px; transform: rotate(-135deg);}
+.header-wrap .month-select span{font-size: 18px;}
+.header-wrap .month-select >span:after{content: ''; display: inline-block; width: 6px; height: 6px; border: 1px solid ; border-left: none; border-bottom: none;  transform:translateY(-4px) rotate(135deg); margin-left: 6px;}
+.header-wrap > .util .hamburger span{background-color: #262626;}
+
+.cont{padding: 40px 0px 1px 0;}
+
+.tit > p{margin-bottom: 12px; font-weight: 600;}
+.tit > p .b-line{border-bottom: 1px solid;}
+.exbold{font-weight: 800;}
+
+.card-wrap{text-align: center; margin-top: 48px;}
+.card-wrap img{width: 168px;}
+.card-wrap h3{font-size: 20px; font-weight: 400; margin-top: 32px;}
+.card-wrap span{display: block; color: #707070;margin-top: 8px;}
+
+.right{width: 100%; height: 20px;margin-top: 22px; }
+.right img{width: 20px;float: right;}
+
+.prog{margin-top: 12px; height: 12px;}
+.prog > .progs{width: 68%; background: linear-gradient(to right, #33C6FE, #ECFF09 );}
+.prog-text{font-size: 14px; margin-bottom: 4px;}
+
+.prog-text span{ color: #262626; font-weight: 600;}
+
+.flex-box{display: flex; justify-content: space-between; margin-top: 40px;}
+.flex-box .box_item{width: 30.8%; height: 144px;font-size: 14px;
+text-align: center;}
+
+.flex-box .box_item span{display: inline-block; margin-top: 32px;}
+.flex-box .box_item p{margin-top: 36px; color: #707070;line-height: 18px;}
+
+.right span{float: right;}
+.right span:after{content: ''; display: inline-block; width: 6px; height: 6px; border: 1px solid ; border-left: none; border-bottom: none;  transform:translateY(-2px) rotate(45deg); margin-left: 6px;}
+
+.pay-tit{margin-top: 38px;}
+
+.pay-wrap{margin-top: 22px;}
+
+.pay-area{position: relative; margin-bottom: 40px;}
+
+.vertical-bar{position: absolute;display: inline-block; left: 36px; width: 1px; height: 100%; background-color: #DDDDDD; z-index: -1;}
+
+.pay-tit-box{width: max-content; height: 32px; background-color: #2FC5FE;
+border-radius: 40px; display: flex; justify-content: space-between;
+align-items: center; padding: 8px 17px; margin-bottom: 16px;}
+.pay-tit-box span{color: #fff; font-size: 14px;}
+.vertical{ width: 1px; height: 12px; background-color: #F7F7F7; opacity: .5; margin: 0 24px;}
+
+.box_1{width: 100%; height: 80px;margin-bottom: 12px; padding: 21px 20px;display: block;}
+
+.pay-box{height: 59px;  display: flex; justify-content: space-between; }
+.pay-box > .left-box img{width: 30px; }
+.pay-box > .left-box > .pay{display: inline-block; margin-left: 12px;}
+.pay-box > .left-box > .pay h3{margin-bottom: 4px;}
+.pay-box > .left-box > .pay>span{font-size: 14px; color: #707070;font-weight: 300;}
+.pay-box > .left-box > .pay>span:after{content: ''; display: inline-block; width: 1px; height: 12px; border-right: 1px solid #707070; margin-left: 4px;transform: translateY(1px);}
+.pay-box > .left-box > .pay p{display: inline-block; font-size: 14px; color: #707070;font-weight: 300;}
+.pay-box > span{margin-top: 10px; }
