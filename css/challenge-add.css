@@ -22,9 +22,9 @@ header{background-color: #fff;box-shadow: 0 3px 8px #CDCDCD1A;}
 .tit-wrap h3{font-size: 18px; font-weight: 800;margin-bottom: 16px;}
 .tit-wrap p{font-size: 18px; font-weight: 400;margin-bottom: 4px;}
 .tit-wrap span{display: block; font-size: 16px; color: #3262FF;margin-bottom: 32px;}
-
-.challenge-container{display: flex; justify-content: space-between;margin-bottom: 20px;}
-.challenge-item{width: 96px; height: 108px; border-radius: 8px;
+.challenge-wrap{height: 620px;}
+.challenge-container{display: flex; justify-content: space-between;margin-bottom: 20px; }
+.challenge-item{width: 28.65%; height: 108px; border-radius: 8px;
 box-shadow: 0 3px 6px #00000029; text-align: center;}
 
 .challenge-item > img{display: block; width: 45px;margin: 20px auto 8px auto;}
@@ -95,9 +95,9 @@ input[id="cb1"]:checked + label {
 input[id="cb1"] {
     display: none;
 }
-
+.cont{height: 100vh;}
 button.result-btn{width: 100%; height: 56px; outline: 0; border: 0;
-    background-color: #32C5FF; border-radius: 8px; margin-top: 181px
+    background-color: #32C5FF; border-radius: 8px; margin-top: 225px
 ;box-shadow: 0 3px 8px #CDCDCD29;}
 button.result-btn .btn-txt{width: 100%; }
 button.result-btn .btn-txt p{display: inline-block; font-size: 16px; color: #fff;line-height: 20px;}

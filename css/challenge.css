@@ -32,14 +32,14 @@ header{background-color: #fff;box-shadow: 0 3px 8px #CDCDCD1A;}
 .pay-box > span.on{color:#FC3145}
 
 
-.prog{margin-top: 24px; margin-bottom: 32px; width: 295px;}
+.prog{margin-top: 24px; margin-bottom: 32px; width: 100%;}
 .progs{background: #32C5FF;}
 .prog.gray-on > .progs{border-radius: 50px;}
 .prog-txt{display: flex; justify-content: space-between; margin: 0 4px 20px 4px; color: #262626;}
 .prog-txt p{font-weight: 400;}
 .prog-txt span{font-weight: 600;}
 
-button.chall-btn{width: 335px; height: 56px; outline: 0; border: 0;
+button.chall-btn{width: 100%; height: 56px; outline: 0; border: 0;
     background-color: #32C5FF; border-radius: 8px; margin-top: 40px;
     margin-bottom: 45px;}
 button.chall-btn .btn-txt{width: 100%; }
