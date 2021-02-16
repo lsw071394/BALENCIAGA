@@ -30,7 +30,13 @@ $(function () {
         console.log('click')
         $(this).toggleClass('select');
     })
-
+    $('.challenge-result-text span').on('click', function () {
+        if ($('#cb1').is(':checked') == true) {
+            $('#cb1').prop('checked', false);
+        } else {
+            $('#cb1').prop('checked', true);
+        }
+    })
 
     $('.highcharts-yaxis-labels text').remove();
     $('.highcharts-legend').remove();

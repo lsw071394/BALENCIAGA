@@ -80,6 +80,8 @@ justify-content: space-between; align-items: center;}
 .challenge-result-text p{font-size: 18px; font-weight: 600; line-height: 30px; margin: 21px 0;}
 .challenge-result-text span{font-size: 16px;line-height: 20px;margin-left: 8px; }
 
+
+
 input[id="cb1"] + label {
     display: inline-block;
     width: 20px;
