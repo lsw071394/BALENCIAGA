@@ -12,6 +12,12 @@ $(function () {
     })
     $('.pay-box > span:contains(+)').css({ 'color': '#3262FF' })
 
+    $('.black_bg').on('click', function () {
+        $('.hamburger').removeClass('act')
+        $('nav').removeClass('act');
+        navOn();
+    })
+
     function navOn() {
         if ($('.hamburger').hasClass('act')) {
             $('.black_bg').css({ 'visibility': 'visible' })
