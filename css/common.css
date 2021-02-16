@@ -35,6 +35,7 @@ h2{display: inline; font-size: 18px; line-height: 21px; color: #262626;font-weig
 h3{color: #262626;}
 span,p{color: #262626;}
 .box{width: 100%; background-color: #fff; border-radius: 8px; box-shadow: 0 3px 10px #00000014;overflow: hidden;}
+.wbox{width: 100%; background-color: #fff; border-radius: 8px; box-shadow: 0 3px 6px #00000029;overflow: hidden;}
 .line{width: 100%; height: 1px; background-color: #DDDDDD;}
 .tit-box{width: 100%; display: flex; justify-content: space-between; align-items: center;}
 .tit-box > span{line-height: 18px;}

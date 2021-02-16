@@ -26,6 +26,11 @@ $(function () {
         }
     }
 
+    $('.challenge-item').on('click', function () {
+        console.log('click')
+        $(this).toggleClass('select');
+    })
+
 
     $('.highcharts-yaxis-labels text').remove();
     $('.highcharts-legend').remove();

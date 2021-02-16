@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>SmartReport_main_page</title>
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/challenge.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-header">
+                <div class="nav-wrap">
+                    <h2>전체메뉴</h2>
+                    <div class="search-box">
+                        <input type="text" placeholder="검색">
+                        <button><img src="./img/icon_search.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-body">
+                <h2>MY</h2>
+                <div class="nav-line"></div>
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)">계좌</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">거래 내역</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">챌린지</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">고정 지출 내역</a>
+                    </li>
+                </ul>
+                <h2>리포트</h2>
+                <div class="nav-line"></div>
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)">카테고리별 소비 내역</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">카드별 이용 실적</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">월별 소비 내역</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="black_bg"></div>
+        <div class="inner-wrap">
+            <div class="header-wrap">
+                <a href="./report1.html">
+                    <span class="prev"></span>
+                </a>
+
+                <div class="month-select">
+                    <span>1월</span>
+                </div>
+                <div class="util">
+                    <div class="white-wrap">
+                        <div class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+    </header>
+    <article class="cont">
+        <div class="inner-wrap">
+            <span class="tit">진행중인 챌린지</span>
+            <div class="select-num">
+                <span>3</span>/5
+            </div>
+            <div class="box box_1">
+                <div class="inner-wrap">
+                    <div class="pay-box">
+                        <div class="left-box">
+                            <img src="./img/pay-1.png" alt="coffe">
+                            <div class="pay">
+                                <h3>도전중!</h3>
+                                <span>식비</span>
+                            </div>
+                        </div>
+                        <span>25%</span>
+                    </div>
+                    <div class="prog">
+                        <div class="progs" id="progressing" style="width: 35%;"></div>
+                    </div>
+                    <div class="prog-txt">
+                        <p>목표 금액</p>
+                        <span>400,000원</span>
+                    </div>
+                    <div class="prog-txt">
+                        <p>사용 금액</p>
+                        <span>160,000원</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box box_1">
+                <div class="inner-wrap">
+                    <div class="pay-box">
+                        <div class="left-box">
+                            <img src="./img/pay-1.png" alt="coffe">
+                            <div class="pay">
+                                <h3>도전중!</h3>
+                                <span>교통</span>
+                            </div>
+                        </div>
+                        <span>83%</span>
+                    </div>
+                    <div class="prog">
+                        <div class="progs" id="progressing" style="width: 81%;"></div>
+                    </div>
+                    <div class="prog-txt">
+                        <p>목표 금액</p>
+                        <span>90,000원</span>
+                    </div>
+                    <div class="prog-txt">
+                        <p>사용 금액</p>
+                        <span>67,000원</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box box_1">
+                <div class="inner-wrap">
+                    <div class="pay-box">
+                        <div class="left-box">
+                            <img class="gray-on" src="./img/pay-1.png" alt="coffe">
+                            <div class="pay gray-on">
+                                <h3>다음 기회에...</h3>
+                                <span>쇼핑</span>
+                            </div>
+                        </div>
+                        <span class="on">실패</span>
+                    </div>
+                    <div class="prog gray-on">
+                        <div class="progs" id="progressing" style="width: 100%;"></div>
+                    </div>
+                    <div class="prog-txt">
+                        <p>목표 금액</p>
+                        <span>280,000원</span>
+                    </div>
+                    <div class="prog-txt">
+                        <p>사용 금액</p>
+                        <span>382,401원</span>
+                    </div>
+                </div>
+            </div>
+            <button class="chall-btn" type="button" onclick="location.href = './challenge-add-1.html'">
+                <div class="btn-txt">
+                    <p>챌린지 추가하기</p>
+                    <div><span></span></div>
+                </div>
+            </button>
+        </div>
+    </article>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
