@@ -19,7 +19,19 @@
         <nav>
             <div class="nav-header">
                 <div class="nav-wrap">
-                    <h2>전체메뉴</h2>
+                    <div class="top">
+                        <h2>전체메뉴</h2>
+                        <div class="util">
+                            <a href="./notice.html">
+                                <div class="notice"></div>
+                            </a>
+                            <div class="hamburger act">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
                     <div class="search-box">
                         <input type="text" placeholder="검색">
                         <button><img src="./img/icon_search.svg" alt=""></button>
@@ -33,15 +45,19 @@
                     <li>
                         <a href="javascript:void(0)">계좌</a>
                     </li>
+                    <div class="li-line"></div>
                     <li>
                         <a href="javascript:void(0)">거래 내역</a>
                     </li>
+                    <div class="li-line"></div>
                     <li>
                         <a href="./challenge.html">챌린지</a>
                     </li>
+                    <div class="li-line"></div>
                     <li>
                         <a href="javascript:void(0)">고정 지출 내역</a>
                     </li>
+                    <div class="li-line"></div>
                 </ul>
                 <h2>리포트</h2>
                 <div class="nav-line"></div>
@@ -49,12 +65,15 @@
                     <li>
                         <a href="./report_result.html">카테고리별 소비 내역</a>
                     </li>
+                    <div class="li-line"></div>
                     <li>
                         <a href="./card-pay-result.html">카드별 이용 실적</a>
                     </li>
+                    <div class="li-line"></div>
                     <li>
                         <a href="./card-pay.html">월별 소비 내역</a>
                     </li>
+                    <div class="li-line"></div>
                 </ul>
             </div>
         </nav>
@@ -104,18 +123,18 @@
                     <img src="./img/report/rice.png" alt="rice_icon">
                 </h3>
             </div>
-            <div class="box box_4">
-                <div class="pay-box">
+            <div class="box box_1">
+                <div class="report-box">
                     <p>수입</p>
                     <span>1,058,200원</span>
                 </div>
                 <div class="vertical"></div>
-                <div class="pay-box">
+                <div class="report-box">
                     <p>지출</p>
                     <span>1,280,320원</span>
                 </div>
             </div>
-            <div class="box box_5">
+            <div class="box box_2">
                 <figure class="highcharts-figure1">
                     <div id="container1"></div>
                 </figure>
@@ -163,7 +182,7 @@
                     <button type="button" onclick="location.href='./report_result.html'">카테고리별 소비 더보기</button>
                 </div>
             </div>
-            <div class="box box_6">
+            <div class="box box_3">
                 <div class="inner-wrap">
                     <h3>성공한 챌린지</h3>
                     <div class="flex-container">
@@ -182,7 +201,7 @@
                     </div>
                 </div>
             </div>
-            <div class="box box_7">
+            <div class="box box_4">
                 <div class="inner-wrap">
                     <h3>카드별 이용 실적</h3>
                     <a href="./card-pay-result.html">
@@ -235,12 +254,12 @@
             <div class="card-banner">
                 <div class="text-box">
                     <p>11번가 신한카드로 바꾸면</p>
-                    <p><span>연<b>154,000</b>원</span> 아낄 수 있어요!</p>
+                    <p><span class="">연<b>154,000</b>원</span> 아낄 수 있어요!</p>
                 </div>
                 <img src="./img/report/banner-card.png" alt="banner-card">
             </div>
 
-            <div class="box box_8">
+            <div class="box box_5">
                 <div class="inner-wrap">
                     <h3>월간 소비 내역</h3>
                     <div class="txt">
@@ -280,129 +299,157 @@
     <script src="./js/jquery.min.js"></script>
     <script src="./js/script.js"></script>
     <script>
-        var chart = new Highcharts.chart('container1', {
+        $(document).ready(function () {
+            var chart = new Highcharts.chart('container1', {
 
-            chart: {
-                type: 'variablepie',
-                // width: 200,
-                height: 220,
-                marginTop: 20
-            },
-            title: {
-                text: ''
-            },
-            credits: {
-                enabled: false
-            },
-            plotOptions: {
-                series: {
-                    enableMouseTracking: false,
-                }
-            },
-
-            series: [{
-                innerSize: '30%',
-                zMin: 0,
-                // shadow: {
-                //     color: 'blue'
-                // },
-                data: [{
-                    className: 'ds',
-                    name: 'hello',
-                    dataLabels: {
-                        enabled: false,
-                        borderRadius: (5, 0, 2, 5),
-                        backgroundColor: '#fff',
-                        padding: 8,
-                        x: -80,
-                        y: 20
-                    },
-                    y: 30,
-                    z: 20,
-                    color: '#32C5FF',
-                }, {
-                    name: '',
-                    y: 22,
-                    z: 10,
-                    color: '#02C04F'
-                }, {
-                    name: '',
-                    y: 19,
-                    z: 10,
-                    color: '#FFBC47'
-                }, {
-                    name: '',
-                    y: 10,
-                    z: 10,
-                    color: '#FF7315'
-                }, {
-                    name: '',
-                    y: 7,
-                    z: 10,
-                    color: '#DDDDDD'
-                },]
-            }],
-        });
-
-
-
-        Highcharts.chart('container', {
-            chart: {
-                type: 'line',
-                height: 220,
-
-            },
-            credits: {
-                enabled: false
-            },
-            title: {
-                text: ''
-            },
-
-            xAxis: {
-                categories: ['0' + 9 + '월', 10 + '월', 11 + '월', 12 + '월',
-                ],
-                labels: {
-                    style: {
-                        fontSize: 16,
-                        color: '#262626',
-                        fontFamily: 'NanumSquare, sans-serif'
-                    }
+                chart: {
+                    type: 'variablepie',
+                    // width: 200,
+                    height: 220,
+                    marginTop: 20
                 },
-            },
-            yAxis: {
                 title: {
                     text: ''
                 },
-                gridLineColor: '#F5F5F5'
-            },
-            plotOptions: {
-                line: {
-                    dataLabels: {
-                        enabled: false,
-                    },
-                    enableMouseTracking: false,
-                    lineWidth: 1,
-                }
-            },
-            series: [{
-                name: '',
-                data: [10, 14, 13, 23.5],
-                marker: {
-                    symbol: 'circle',
-                    radius: 5
-                },
-                color: '#FA6400'
-            }, {
-                name: '',
-                data: [20, 25, 18, 20],
-                marker: { symbol: 'circle', radius: 5 },
-                color: '#32C5FF'
-            }],
-            navigation: {
-                buttonOptions: {
+                credits: {
                     enabled: false
+                },
+                plotOptions: {
+                    series: {
+                        enableMouseTracking: false,
+                    }
+                },
+
+                series: [{
+                    innerSize: '30%',
+                    zMin: 0,
+                    // shadow: {
+                    //     color: 'blue'
+                    // },
+                    data: [{
+                        className: 'ds',
+                        name: 'hello',
+                        dataLabels: {
+                            enabled: false,
+                            borderRadius: (5, 0, 2, 5),
+                            backgroundColor: '#fff',
+                            padding: 8,
+                            x: -80,
+                            y: 20
+                        },
+                        y: 30,
+                        z: 20,
+                        color: '#32C5FF',
+                    }, {
+                        name: '',
+                        y: 22,
+                        z: 10,
+                        color: '#02C04F'
+                    }, {
+                        name: '',
+                        y: 19,
+                        z: 10,
+                        color: '#FFBC47'
+                    }, {
+                        name: '',
+                        y: 10,
+                        z: 10,
+                        color: '#FF7315'
+                    }, {
+                        name: '',
+                        y: 7,
+                        z: 10,
+                        color: '#DDDDDD'
+                    },]
+                }],
+            });
+            var isVisible = false;
+
+            $(window).on('scroll', function () {
+                if (checkVisible($('.tip-banner')) && !isVisible) {
+                    isVisible = true;
+                    linecharts();
                 }
+            });
+
+            function checkVisible(elm, eval) {
+                eval = eval || "object visible";
+                var viewportHeight = $(window).height(), // Viewport Height
+                    scrolltop = $(window).scrollTop(), // Scroll Top
+                    y = $(elm).offset().top,
+                    elementHeight = $(elm).height();
+                console.log(viewportHeight, scrolltop, y, elementHeight)
+                if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
+                if (eval == "above") return ((y < (viewportHeight + scrolltop)));
+            }
+
+            function linecharts() {
+                Highcharts.chart('container', {
+                    chart: {
+                        type: 'line',
+                        height: 220,
+
+                    },
+                    credits: {
+                        enabled: false
+                    },
+                    title: {
+                        text: ''
+                    },
+
+                    xAxis: {
+                        categories: ['0' + 9 + '월', 10 + '월', 11 + '월', 12 + '월',
+                        ],
+                        labels: {
+                            style: {
+                                fontSize: 16,
+                                color: '#262626',
+                                fontFamily: 'NanumSquare, sans-serif'
+                            }
+                        },
+                    },
+                    yAxis: {
+                        title: {
+                            text: ''
+                        },
+                        gridLineColor: '#F5F5F5'
+                    },
+                    plotOptions: {
+                        line: {
+                            dataLabels: {
+                                enabled: false,
+                            },
+                            enableMouseTracking: false,
+                            lineWidth: 1,
+                        }
+                    },
+                    series: [{
+                        name: '',
+                        data: [10, 14, 13, 23.5],
+                        marker: {
+                            symbol: 'circle',
+                            radius: 5
+                        },
+                        color: '#FA6400'
+                    }, {
+                        name: '',
+                        data: [20, 25, 18, 20],
+                        marker: { symbol: 'circle', radius: 5 },
+                        color: '#32C5FF'
+                    }],
+                    navigation: {
+                        buttonOptions: {
+                            enabled: false
+                        }
+                    }
+
+                });
+
+
+                $('.highcharts-yaxis-labels text').remove();
+                $('.highcharts-legend').remove();
+                $('.highcharts-xaxis').remove();
+                $('.highcharts-yaxis-grid .highcharts-grid-line').eq(0).remove();
             }
 
         });

@@ -14,11 +14,23 @@
 
 <body>
 
-    <header class="header-shadow">
+    <header>
         <nav>
             <div class="nav-header">
                 <div class="nav-wrap">
-                    <h2>전체메뉴</h2>
+                    <div class="top">
+                        <h2>전체메뉴</h2>
+                        <div class="util">
+                            <a href="./notice.html">
+                                <div class="notice"></div>
+                            </a>
+                            <div class="hamburger act">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
                     <div class="search-box">
                         <input type="text" placeholder="검색">
                         <button><img src="./img/icon_search.svg" alt=""></button>
@@ -32,15 +44,19 @@
                     <li>
                         <a href="javascript:void(0)">계좌</a>
                     </li>
+                    <div class="li-line"></div>
                     <li>
                         <a href="javascript:void(0)">거래 내역</a>
                     </li>
+                    <div class="li-line"></div>
                     <li>
                         <a href="./challenge.html">챌린지</a>
                     </li>
+                    <div class="li-line"></div>
                     <li>
                         <a href="javascript:void(0)">고정 지출 내역</a>
                     </li>
+                    <div class="li-line"></div>
                 </ul>
                 <h2>리포트</h2>
                 <div class="nav-line"></div>
@@ -48,12 +64,15 @@
                     <li>
                         <a href="./report_result.html">카테고리별 소비 내역</a>
                     </li>
+                    <div class="li-line"></div>
                     <li>
                         <a href="./card-pay-result.html">카드별 이용 실적</a>
                     </li>
+                    <div class="li-line"></div>
                     <li>
                         <a href="./card-pay.html">월별 소비 내역</a>
                     </li>
+                    <div class="li-line"></div>
                 </ul>
             </div>
         </nav>
@@ -85,11 +104,14 @@
         <article class="main-visual">
             <div class="inner-wrap">
                 <span class="emogi"><img src="./img/emti-green.png" alt=""> 소비상태 양호</span>
-                <div class="main-text">
-                    <span>손민희님,</span>
-                    <span>챌린지 달성률은</span>
-                    <span class="percent">65%</span>입니다!
-                </div>
+                <a href="./challenge.html">
+                    <div class="main-text">
+                        <p class="regular">손민희님,</p>
+                        <p class="yellow">챌린지 달성률은</p>
+                        <p class="percent yellow">65%</p>
+                        <span class="regular">입니다!</span>
+                    </div>
+                </a>
                 <div class="prog">
                     <div class="progs" id="progressing"></div>
                 </div>
@@ -139,7 +161,7 @@
                 <div class="box-tit">
                     <h2>최근 내역</h2>
                     <a href="./card-pay.html">
-                        <span>모두 보기</span>
+                        <span class="gray70">모두 보기</span>
                     </a>
                 </div>
                 <div class="box box_2">
@@ -190,7 +212,6 @@
                         </div>
                         <span>+888,888원</span>
                     </div>
-                    <div class="line"></div>
                 </div>
                 <div class="box box_3">
                     <div class="tit-box">
@@ -200,14 +221,14 @@
                         <span>자세히</span>
                     </div>
                     <div class="fix_pay">
-                        <p>납부된 고정 지출</p>
+                        <p class="regular">납부된 고정 지출</p>
                         <span>98,900원</span>
                     </div>
                     <div class="prog">
                         <div class="progs" id="progressing"></div>
                     </div>
                     <div class="prog-text">
-                        <p>총 고정 지출</p>
+                        <p class="regular">총 고정 지출</p>
                         <span>398,900원</span>
                     </div>
                     <div class="radius-box">
@@ -217,7 +238,7 @@
                         <div class="left-box">
                             <span>25일</span>
                             <img src="./img/main/fix-1.png" alt="">
-                            <p>신한 첫 급여 드림...</p>
+                            <p class="regular">신한 첫 급여 드림...</p>
                         </div>
                         <span>200,000원</span>
                     </div>
@@ -225,9 +246,9 @@
                         <div class="left-box">
                             <span>25일</span>
                             <img src="./img/main/fix-2.png" alt="">
-                            <p>신한 첫 급여 드림...</p>
+                            <p class="regular">후불 교통 대금</p>
                         </div>
-                        <span>200,000원</span>
+                        <span>100,000원</span>
                     </div>
                 </div>
             </div>
