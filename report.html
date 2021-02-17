@@ -21,16 +21,25 @@
                 <div class="nav-wrap">
                     <div class="top">
                         <h2>전체메뉴</h2>
-                        <div class="util">
-                            <a href="./notice.html">
-                                <div class="notice"></div>
-                            </a>
-                            <div class="hamburger act">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </div>
+                        <ul class="util">
+                            <li>
+                                <a href="./index.html">
+                                    <img src="./img/home.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="notice" href="./notice.html">
+                                    <img src="./img/icon_notice.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <div class="hamburger act">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                     <div class="search-box">
                         <input type="text" placeholder="검색">
@@ -88,21 +97,22 @@
                         <li>리포트</li>
                     </a>
                 </ul>
-                <div class="util">
-                    <div class="white-wrap">
-                        <a href="./notice.html">
-                            <div class="notice"></div>
+                <ul class="util">
+                    <li>
+                        <a class="notice" href="./notice.html">
+                            <img src="./img/icon_notice_black.png" alt="">
                         </a>
+                    </li>
+                    <li>
                         <div class="hamburger">
                             <span></span>
                             <span></span>
                             <span></span>
                         </div>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </div>
-
     </header>
 
     <article class="cont">
@@ -135,6 +145,7 @@
                 </div>
             </div>
             <div class="box box_2">
+                <div class="chart-box">47% 여행</div>
                 <figure class="highcharts-figure1">
                     <div id="container1"></div>
                 </figure>
@@ -271,8 +282,8 @@
                             <div class="circle"></div>
                             <span>지출</span>
                         </div>
-
                     </div>
+                    <div class="chart-box">- 499,530원</div>
                     <figure class="highcharts-figure">
                         <div id="container"></div>
                     </figure>
@@ -300,13 +311,17 @@
     <script src="./js/script.js"></script>
     <script>
         $(document).ready(function () {
+            setTimeout(function () {
+                $('.box_2 .chart-box').animate({ 'opacity': 1 })
+            }, 1000);
+
             var chart = new Highcharts.chart('container1', {
 
                 chart: {
                     type: 'variablepie',
                     // width: 200,
                     height: 220,
-                    marginTop: 20
+                    marginTop: 20,
                 },
                 title: {
                     text: ''
@@ -317,29 +332,30 @@
                 plotOptions: {
                     series: {
                         enableMouseTracking: false,
+
+                    },
+                    variablepie: {
+                        borderColor: 'transparent'
                     }
                 },
 
                 series: [{
                     innerSize: '30%',
                     zMin: 0,
-                    // shadow: {
-                    //     color: 'blue'
-                    // },
+                    shadow: {
+                        color: '#9BE3FF',
+                        offsetX: 2,
+                        offsetY: 1,
+                        opacity: '0.6',
+                        width: 5
+                    },
                     data: [{
-                        className: 'ds',
-                        name: 'hello',
-                        dataLabels: {
-                            enabled: false,
-                            borderRadius: (5, 0, 2, 5),
-                            backgroundColor: '#fff',
-                            padding: 8,
-                            x: -80,
-                            y: 20
-                        },
+                        name: '',
+
                         y: 30,
                         z: 20,
                         color: '#32C5FF',
+
                     }, {
                         name: '',
                         y: 22,
@@ -369,6 +385,9 @@
                 if (checkVisible($('.tip-banner')) && !isVisible) {
                     isVisible = true;
                     linecharts();
+                    setTimeout(function () {
+                        $('.box_5 .chart-box').animate({ 'opacity': 1 })
+                    }, 1000);
                 }
             });
 

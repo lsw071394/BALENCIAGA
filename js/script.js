@@ -9,12 +9,14 @@ $(function () {
     $('.header-wrap .hamburger').on('click', function () {
         $(this).addClass('act');
         $('nav').addClass('act');
+
         navOn();
     })
 
     $('nav .hamburger').on('click', function () {
         $('.header-wrap .hamburger').removeClass('act');
         $('nav').removeClass('act');
+
         navOn();
     })
 
