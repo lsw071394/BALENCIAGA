@@ -4,6 +4,9 @@ $(function () {
     //     $(this).parent().toggleClass('act')
     // });
 
+    // var h = $('.al').length;
+    // console.log(h);
+    // $('.notice-circle').html(h);
 
 
     $('.header-wrap .hamburger').on('click', function () {
@@ -90,7 +93,6 @@ $(function () {
 
             });
     });
-
 
 
 
