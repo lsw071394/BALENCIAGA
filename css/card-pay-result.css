@@ -9,7 +9,7 @@ header{background-color: #fff;box-shadow: 0 3px 8px #CDCDCD1A;}
 .tit > p:last-child{font-size: 20px;}
 
 .card-wrap{text-align: center; margin-top: 48px;}
-.card-wrap img{width: 168px;}
+.card-wrap img{width: 200px;}
 .card-wrap h3{font-size: 20px;  margin-top: 32px;}
 .card-wrap span{display: block; color: #707070;margin-top: 8px;}
 
@@ -17,7 +17,7 @@ header{background-color: #fff;box-shadow: 0 3px 8px #CDCDCD1A;}
 .right img{width: 20px;float: right;}
 
 .prog{margin-top: 12px; height: 12px;}
-.prog > .progs{background: linear-gradient(to right, #33C6FE, #ECFF09 );}
+.prog > .progs{background: linear-gradient(to right, #33C6FE, #dcf008 );}
 .prog-text{font-size: 14px; margin-bottom: 4px;}
 
 .prog-text span{ color: #262626; }

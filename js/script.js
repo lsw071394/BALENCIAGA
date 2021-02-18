@@ -63,13 +63,6 @@ $(function () {
     })
 
 
-    $('.progs').each(function () {
-        var $this = $(this);
-        var per = $this.attr('per');
-        $this.animate({
-            width: per + "%"
-        }, 1200);
-    });
 
 
     $('.counter').each(function () {
@@ -93,6 +86,10 @@ $(function () {
 
             });
     });
+
+
+
+
 
 
 

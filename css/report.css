@@ -28,13 +28,13 @@ header{background-color: #fff;}
 
 
 
-.main-visual{ width: 100%;background-color: #F7F7F7;text-align: center;}
+.main-visual{position: relative; width: 100%;background-color: #F7F7F7;text-align: center;}
 .main-visual > span{display: inline-block; font-size: 14px; margin-top: 40px;}
 .main-visual p{margin: 5px 0 13px 0; line-height: 18px;}
 .main-visual p >span{font-size: 18px; color: #F03E3E;}
 .main-visual p >span:first-child{padding-left: 2px;}
 .main-visual p >span:last-child{padding-right: 2px;}
-.main-visual h3{font-size: 30px;margin-bottom: 40px;}
+.main-visual h3{font-size: 30px;margin-bottom: 40px;position: relative;}
 .main-visual img{width: 30px;}
 
 
@@ -80,6 +80,7 @@ opacity: 0; z-index: 1;}
 .box_4 .card-box > .flex-container .icon{width: 20px; height: 20px;transform: translateY(20px);}
 .box_4 .card-box > .flex-container .icon >img{width: 100%;}
 .box_4 .prog{margin-top: 24px; height: 8px;}
+.box_4  .prog > .progs.ac{width: 100%; background: linear-gradient(to right, #33C6FE, #ECFF09 )}
 .box_4 .prog > .progs{width: 68%; background: linear-gradient(to right, #33C6FE ,#22d86b 49%, rgb(200, 255, 0));}
 .box_4 .prog-text{font-size: 14px; margin-bottom: 4px;}
 .box_4 .prog-text p{color: #707070;}

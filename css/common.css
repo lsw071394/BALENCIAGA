@@ -15,7 +15,7 @@ header{position: fixed;width: 100%; top: 0; left: 0;z-index: 1;box-shadow: 0 3px
 .util .home{display: inline-block; width: 25px; height: 25px; background-image: url(../img/home.png);}
 .util img{width: 25px;}
 
-.util .hamburger{display: inline-block; width: 25px; height: 25px;padding: 3px 0; }
+.util .hamburger{display: inline-block; width: 25px; height: 25px;padding: 3px 0;  }
 .util .hamburger span{display:block; width: 24px; height: 2px;margin-bottom: 6px;background-color: #fff;}
 .hamburger.act span:nth-child(1){transform: translateY(8px) rotate(45deg); transition: .2s ease-in-out;}
 .hamburger.act span:nth-child(2){visibility: hidden;}
@@ -112,3 +112,24 @@ nav .hamburger span{background-color: #fff;}
       }
   }
 
+
+.vibe{-webkit-animation: viber 1s ease-in-out;}
+.vibein{-webkit-animation: vibe .5s infinite alternate-reverse;}
+
+@-webkit-keyframes viber{
+    0%{transform: scale(1);}
+    30%{transform: scale(1.1) rotate(-25deg);}
+    60%{transform: scale(1.1) rotate(25deg);}
+    100%{transform: scale(1) rotate(0deg);}
+}
+
+
+.dive{-webkit-animation: diving 1s;}
+
+@-webkit-keyframes diving{
+  0%{top: -300px; visibility: visible;}
+  70%{top: 0;transform: rotate(0);}
+  75%{transform: rotate(15deg);}
+  95%{transform: rotate(-15deg);}
+  100%{transform: rotate(0);}
+}
