@@ -30,7 +30,7 @@ header{background-color: #fff;}
 
 .main-visual{ width: 100%;background-color: #F7F7F7;text-align: center;}
 .main-visual > span{display: inline-block; font-size: 14px; margin-top: 40px;}
-.main-visual p{margin: 5px 0 13px 0;}
+.main-visual p{margin: 5px 0 13px 0; line-height: 18px;}
 .main-visual p >span{font-size: 18px; color: #F03E3E;}
 .main-visual p >span:first-child{padding-left: 2px;}
 .main-visual p >span:last-child{padding-right: 2px;}
