@@ -29,7 +29,8 @@
                             </li>
                             <li>
                                 <a class="notice" href="./notice.html">
-                                    <img src="./img/icon_notice.png" alt="">
+                                    <div class="notice-circle">5</div>
+                                    <img src="./img/notice.png" alt="">
                                 </a>
                             </li>
                             <li>
@@ -100,7 +101,8 @@
                 <ul class="util">
                     <li>
                         <a class="notice" href="./notice.html">
-                            <img src="./img/icon_notice_black.png" alt="">
+                            <div class="notice-circle">5</div>
+                            <img src="./img/notice_black.png" alt="">
                         </a>
                     </li>
                     <li>
@@ -128,7 +130,7 @@
             </div>
             <div class="main-visual">
                 <span>지난달 대비</span>
-                <p>식비 지출<span>7%</span>상승!</p>
+                <p>식비 지출<span class="counter" data-count="7"></span><span>%</span>상승!</p>
                 <h3>대식가
                     <img src="./img/report/rice.png" alt="rice_icon">
                 </h3>
@@ -311,6 +313,7 @@
     <script src="./js/script.js"></script>
     <script>
         $(document).ready(function () {
+
             setTimeout(function () {
                 $('.box_2 .chart-box').animate({ 'opacity': 1 })
             }, 1000);
@@ -342,13 +345,13 @@
                 series: [{
                     innerSize: '30%',
                     zMin: 0,
-                    shadow: {
-                        color: '#9BE3FF',
-                        offsetX: 2,
-                        offsetY: 1,
-                        opacity: '0.6',
-                        width: 5
-                    },
+                    // shadow: {
+                    //     color: '#9BE3FF',
+                    //     offsetX: 2,
+                    //     offsetY: 1,
+                    //     opacity: '0.6',
+                    //     width: 5
+                    // },
                     data: [{
                         name: '',
 
@@ -385,8 +388,10 @@
                 if (checkVisible($('.tip-banner')) && !isVisible) {
                     isVisible = true;
                     linecharts();
+
                     setTimeout(function () {
                         $('.box_5 .chart-box').animate({ 'opacity': 1 })
+
                     }, 1000);
                 }
             });
@@ -400,6 +405,7 @@
                 console.log(viewportHeight, scrolltop, y, elementHeight)
                 if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
                 if (eval == "above") return ((y < (viewportHeight + scrolltop)));
+
             }
 
             function linecharts() {
@@ -407,7 +413,7 @@
                     chart: {
                         type: 'line',
                         height: 220,
-
+                        zIndex: 1
                     },
                     credits: {
                         enabled: false

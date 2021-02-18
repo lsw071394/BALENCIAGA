@@ -20,9 +20,10 @@ section{background-color: #F7F7F7;}
 .main-visual .emogi{display: inline-block; margin-top: 40px; margin-left: 4px; font-size: 14px; line-height: 18px;}
 .main-visual .emogi img{width: 18px;margin-right: 4px;}
 .main-text{font-size: 30px; line-height: 40px; margin-top: 20px; color: #F7F7F7;}
-.main-text .percent{display: inline-block; margin-right: 10px;}
+.main-text .percent{display: inline-block; margin-right: 0;}
 .main-visual .prog{margin-top: 32px;}
-.main-visual .progs{width: 55%;background: #3262FF;}
+.main-visual .progs{width: 0%; background: #3262FF;}
+
 
 
 .cont > .inner-wrap{transform: translateY(-64px);}
@@ -49,6 +50,7 @@ section{background-color: #F7F7F7;}
 .box-tit > span{color: #707070;}
 .box-tit span:after{content: ''; display: inline-block; width: 6px; height: 6px; border: 1px solid ; border-left: none; border-bottom: none;  transform:translateY(-2px) rotate(45deg); margin-left: 4px;}
 .box_2{height: 324px;padding-top: 24px; }
+.box_2 img{width: 25px;}
 .box_2 > .line{margin: 20px 0;}
 
 
