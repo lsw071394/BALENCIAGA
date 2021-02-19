@@ -67,7 +67,8 @@ nav .hamburger span{background-color: #fff;}
 /*  */
 
 /* side remote */
-.side-remote{display: none; width: 44px; height: 44px; border-radius: 50%; background-color: #2FC5FE; position: fixed; bottom: 7%; right: 20px;  z-index: 5;}
+.side-remote{display: none; width: 44px; height: 44px; border-radius: 50%; background-color: #2FC5FE; position: fixed; bottom: 10%; right: 20px;  z-index: 5;
+  box-shadow: 0 3px 10px #5DD1FF80;}
 .side-remote > .arrow{display: inline-block; width: 8px;height: 8px;border: 2px solid #fff; border-left: 0;border-bottom: 0; position: absolute;top: calc(50% - 2px); left: calc(50% - 4px); transform:rotate(-45deg);}
 /* ---------------------------------------- */
 
