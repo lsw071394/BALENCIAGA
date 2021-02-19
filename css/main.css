@@ -29,7 +29,7 @@ section{background-color: #F7F7F7;}
 
 .cont > .inner-wrap{transform: translateY(-64px);}
 
-.box_1{height: 300px; padding-top: 25px;}
+.box_1{padding-top: 25px;}
 .box_1 .tit-box{width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 0 20px;}
 .box_1 .tit-box > span{line-height: 18px;}
 .box_1 .tit-box span:after{content: ''; display: inline-block; width: 6px; height: 6px; border: 1px solid ; border-left: none; border-bottom: none;  transform:translateY(-2px) rotate(45deg); margin-left: 4px;}
@@ -39,9 +39,7 @@ section{background-color: #F7F7F7;}
 .box_1 .text-box{width: 100%; display: flex; justify-content: space-between;align-items: center; margin-bottom: 32px;padding: 0 20px; }
 .box_1 .text-box > .bank{display: flex;align-items: center;}
 .box_1 .text-box > .bank >img{width: 25px; margin-right: 8px;}
-.box_1 > .arrco-btn{text-align: center; }
-.box_1 > .arrco-btn> span{color: #707070;cursor: pointer;}
-.box_1 > .arrco-btn> span:after{content: ''; display: inline-block; width: 6px; height: 6px; border: 1px solid ; border-left: none; border-bottom: none;  transform:translateY(-4px) rotate(135deg); margin-left: 6px;}
+
 
 
 .pay-box > .left-box > .pay>span:after{content: ''; display: inline-block; width: 1px; height: 12px; border-right: 1px solid #CDCDCD; margin-left: 4px;transform: translateY(1px);}

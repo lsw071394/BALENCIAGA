@@ -1,13 +1,9 @@
 $(function () {
-    // $('.arrco-btn').on('click', function () {
 
-    //     $(this).parent().toggleClass('act')
-    // });
 
-    // var h = $('.al').length;
-    // console.log(h);
-    // $('.notice-circle').html(h);
-
+    $('.accro-btn').on('click', function () {
+        $('.accrodian').slideToggle(200)
+    });
 
     $('.header-wrap .hamburger').on('click', function () {
         $(this).addClass('act');
@@ -89,8 +85,21 @@ $(function () {
 
 
 
+    // 사이드 리모트 show/hide
+    var sc = window.scrollY;
+    $(window).scroll(function () {
+        var sc = $(document).scrollTop();
+        if (sc < 210) {
+            $('.side-remote').hide(500);
+        } else { $('.side-remote').show(500) }
+    })
 
-
+    $('a.side-remote').on('click', function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        }, 600);
+    })
 
 
 });
