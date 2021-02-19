@@ -23,9 +23,9 @@ header{background-color: #fff;box-shadow: 0 3px 8px #CDCDCD1A;}
 .tit-wrap p{font-size: 18px; margin-bottom: 6px;}
 .tit-wrap span{display: block;  color: #3262FF;margin-bottom: 32px;}
 .challenge-wrap{height: 620px;}
-.challenge-container{display: flex; justify-content: space-between;margin-bottom: 20px; }
+.challenge-container{display: flex; justify-content: space-between;margin-bottom: 20px;flex-wrap: wrap; }
 .challenge-item{width: 28.65%; height: 108px; border-radius: 8px;
-box-shadow: 0 3px 6px #00000029; text-align: center;}
+box-shadow: 0 3px 6px #00000029; text-align: center; margin-bottom: 20px;}
 
 .challenge-item > img{display: block; width: 45px;margin: 20px auto 8px auto; border-radius: 50%; background-color: #f7f7f7;}
 

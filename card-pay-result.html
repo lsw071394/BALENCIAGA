@@ -239,7 +239,7 @@
                 var per = $this.attr('per');
                 $this.animate({
                     width: per + "%"
-                }, 1200);
+                }, 1200, 'easeInCirc');
                 if (per >= 100) {
                     $(this).css({ 'border-radius': '50px' })
                 }

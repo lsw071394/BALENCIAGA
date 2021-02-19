@@ -130,7 +130,7 @@
                         <span>25%</span>
                     </div>
                     <div class="prog">
-                        <div class="progs" id="progressing" style="width: 35%;"></div>
+                        <div class="progs" id="progressing" per="25"></div>
                     </div>
                     <div class="prog-txt">
                         <p>목표 금액</p>
@@ -155,7 +155,7 @@
                         <span>83%</span>
                     </div>
                     <div class="prog">
-                        <div class="progs" id="progressing" style="width: 81%;"></div>
+                        <div class="progs" id="progressing" per="83"></div>
                     </div>
                     <div class="prog-txt">
                         <p>목표 금액</p>
@@ -202,6 +202,19 @@
     </article>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/script.js"></script>
+    <script>
+        $(function () {
+
+            $('.progs').each(function () {
+                var $this = $(this);
+                var per = $this.attr('per');
+                $this.animate({
+                    width: per + "%"
+                }, 1200);
+
+            });
+        })
+    </script>
 </body>
 
 </html>

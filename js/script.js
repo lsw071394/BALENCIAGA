@@ -44,12 +44,6 @@ $(function () {
     });
 
 
-
-    $('.challenge-item').on('click', function () {
-        console.log('click')
-        $(this).toggleClass('select');
-    });
-
     $('.challenge-result-text span').on('click', function () {
         if ($('#cb1').is(':checked') == true) {
             $('#cb1').prop('checked', false);
@@ -100,6 +94,29 @@ $(function () {
             scrollTop: 0
         }, 600);
     })
+
+    // 챌린지 아이템 체크 ------------------
+
+    var $checkItem = $('.select').length + 3;
+    $('.checkCount').html($checkItem);
+
+    $('.challenge-item').on('click', function () {
+        var $checkItem = $('.select').length + 3;
+        if ($checkItem < 5) {
+            $(this).toggleClass('select');
+        } else if ($checkItem <= 5) {
+            $(this).removeClass('select');
+        }
+
+        $('.checkCount').html($checkItem);
+        return false;
+    });
+
+
+
+
+
+
 
 
 });
