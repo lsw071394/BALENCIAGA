@@ -54,7 +54,7 @@ button.chall-btn .btn-txt{width: 100%; }
 .challenge-box .challenge-tit span{font-size: 18px;}
 .challenge-box .num-box{position: relative;
 margin-top: 16px;  display: flex; justify-content: space-between; align-items: center;}
-.num-box > input{width: 100%; height: 56px;border-radius: 8px; border: 1px solid #DDDDDD;font-size: 30px;  padding-left: 20px; line-height: 56px;font-family: 'NanumSquare', sans-serif;font-weight: 800;}
+.num-box > input{width: 100%; height: 46px;border-radius: 8px; border: 1px solid #DDDDDD;font-size: 30px;  padding-left: 20px; line-height: 56px;font-family: 'NanumSquare', sans-serif;font-weight: 800;}
 input::placeholder{color: #262626;font-weight: 800;font-family: 'NanumSquare', sans-serif;}
 /* .challenge-box .num-box span{font-size: 30px; } */
 .challenge-box .num-box p{display: inline-block; font-size: 20px;  position: absolute; right: 20px; line-height: 56px;}
