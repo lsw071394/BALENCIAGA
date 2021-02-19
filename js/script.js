@@ -95,24 +95,59 @@ $(function () {
         }, 600);
     })
 
-    // 챌린지 아이템 체크 ------------------
+    // // 챌린지 아이템 체크 ------------------
 
+    // var $checkSelected = $('.selected').length;
+    // console.log($checkSelected)
+    // $('.checkCount').html($checkSelected);
+
+
+
+
+
+
+    // $('.challenge-item').on('click', function (e) {
+
+    //     var $checkItem = $('.select').length + 1;
+    //     console.log($checkItem);
+    //     var checkResult = ($checkSelected + $checkItem);
+
+
+    //     if (checkResult < 6) {
+    //         $(this).toggleClass('select');
+    //         e.stopPropagation();
+    //     } else if ($checkItem <= 5) {
+    //         $(this).removeClass('select');
+
+    //     } else {
+    //         return false;
+    //     }
+    //     $('.checkCount').html(checkResult);
+    // });
+
+
+    // 챌린지 아이템 체크 ------------------
     var $checkItem = $('.select').length + 3;
-    $('.checkCount').html($checkItem);
+    $('.checkCount').html($checkItem); //로딩시 초기 셋팅(3개 선택)
+
 
     $('.challenge-item').on('click', function () {
-        var $checkItem = $('.select').length + 3;
-        if ($checkItem < 5) {
-            $(this).toggleClass('select');
-        } else if ($checkItem <= 5) {
+        var chek_len = $('.select').length + 3;
+
+        if ($(this).hasClass('select')) { //내가 slect 클래스가 있을때
             $(this).removeClass('select');
+            chek_len = $('.select').length + 3; //현재 select 갯수 + 3
+            $('.checkCount').html(chek_len);
+
+        } else if (!$(this).hasClass('select')) {
+            if (chek_len < 5) {
+                $(this).addClass('select');
+                chek_len = $('.select').length + 3; //현재 select 갯수 + 3
+                $('.checkCount').html(chek_len);
+            }
         }
 
-        $('.checkCount').html($checkItem);
-        return false;
     });
-
-
 
 
 
