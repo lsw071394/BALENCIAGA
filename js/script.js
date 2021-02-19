@@ -3,6 +3,7 @@ $(function () {
 
     $('.accro-btn').on('click', function () {
         $('.accrodian').slideToggle(200)
+        $(this).toggleClass('on');
     });
 
     $('.header-wrap .hamburger').on('click', function () {

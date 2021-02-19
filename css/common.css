@@ -61,12 +61,13 @@ nav .hamburger span{background-color: #fff;}
 /* accrodian */
 .accrodian{display: none;}
 .accro-btn{height: 45px; text-align: center; background-color: #fff;}
-.accro-btn> span{display: inline-block; padding-top: 5px; color: #707070;cursor: pointer;}
+.accro-btn> span{display: inline-block; padding-top: 2px; color: #707070;cursor: pointer;}
 .accro-btn> span:after{content: ''; display: inline-block; width: 6px; height: 6px; border: 1px solid ; border-left: none; border-bottom: none;  transform:translateY(-4px) rotate(135deg); margin-left: 6px;}
+.accro-btn.on> span:after{content: ''; display: inline-block; width: 6px; height: 6px; border: 1px solid ; border-left: none; border-bottom: none;  transform:translateY(0px) rotate(-45deg); margin-left: 6px;}
 /*  */
 
 /* side remote */
-.side-remote{display: none; width: 30px; height: 30px; border-radius: 50%; background-color: #2FC5FE; position: fixed; bottom: 7%; right: 20px;  z-index: 5;}
+.side-remote{display: none; width: 44px; height: 44px; border-radius: 50%; background-color: #2FC5FE; position: fixed; bottom: 7%; right: 20px;  z-index: 5;}
 .side-remote > .arrow{display: inline-block; width: 8px;height: 8px;border: 2px solid #fff; border-left: 0;border-bottom: 0; position: absolute;top: calc(50% - 2px); left: calc(50% - 4px); transform:rotate(-45deg);}
 /* ---------------------------------------- */
 
@@ -105,7 +106,7 @@ nav .hamburger span{background-color: #fff;}
 .yellow{color: #ECFF08;}
 .blue{color: #3262FF;}
 .gray70{color: #707070;}
-
+.grayE6{color: #E6E6E6};
 /* font-weight */
 .regular{font-weight: 400;}
 .exbold{font-weight: 800;}
@@ -146,11 +147,13 @@ nav .hamburger span{background-color: #fff;}
 
 
 /* report month */
-.month-slide{width: 100%; height: 60px; border-bottom: 1px solid #EFEEEE; position: fixed;z-index: 1;background-color: #f7f7f7;}
+.month-slide{width: 100%; height: 60px; border-bottom: 1px solid #EFEEEE; z-index: 1;background-color: #f7f7f7;}
 .month-slide .flex-container{height: 60px; display: flex; justify-content: space-between;align-items: center;}
 .month-slide .flex-container span{display: block; width: 10px;height: 10px; border: 2px solid #949494; border-bottom: none;border-left: none; }
 .month-slide .flex-container .prev{margin-left: 4px; transform: rotate(-135deg);}
+.month-slide .flex-container .prev.grayE6{border-color: #E6E6E6}
 .month-slide .flex-container .next{margin-right: 4px; transform: rotate(45deg);}
+.month-slide .flex-container .next.grayE6{border-color: #E6E6E6}
 .month-slide .flex-container p{font-size: 18px; color: #707070;}
 
 .visible{visibility: hidden;}
