@@ -195,7 +195,7 @@
                         <span>280,000원</span>
                     </div>
                     <div class="prog-txt">
-                        <p>사용 금액</p>
+                        <p class="visible-text">사용 금액</p>
                         <span>382,401원</span>
                     </div>
                 </div>
@@ -223,7 +223,7 @@
 
             var isVisible = false;
             $(window).on('scroll', function () {
-                if (checkVisible($('.chall-btn')) && !isVisible) {
+                if (checkVisible($('.visible-text')) && !isVisible) {
 
                     $('.gray').each(function () {
                         var $this = $(this);
