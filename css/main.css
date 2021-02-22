@@ -1,21 +1,12 @@
-
 body{background-color:#32C5FF;}
-
 .prog{height: 12px;}
-
-
 header{background-color: #32C5FF;}
-
 .header-wrap > .menu a{color: #F7F7F7;}
 .header-wrap > .menu a.active{font-size: 26px; opacity: 1;}
 .header-wrap > .menu a.active li:before{content: ''; display: block; width: 4px; height: 4px; border-radius: 50%; background-color: #F7F7F7; position: absolute; top: -10px; left: 50%;  transform: translateX(-50%);}
 .header-wrap > .util > .hamburger span{background-color: #F7F7F7;}
-
-
-
 .line{background-color: #F7F7F7;}
 section{background-color: #F7F7F7;}
-
 .main-visual{ width: 100%; height: 372px; background-color: #32C5FF;}
 .main-visual .emogi{display: inline-block; margin-top: 40px; margin-left: 4px; font-size: 14px; line-height: 18px;}
 .main-visual .emogi img{width: 18px;margin-right: 4px;}
@@ -25,10 +16,7 @@ section{background-color: #F7F7F7;}
 .main-visual .progs{width: 0%; background: #3262FF;}
 .next{content: ''; display: inline-block; width: 10px; height: 10px; border: 2px solid ; border-left: none; border-bottom: none;  transform: rotate(45deg); position: absolute; right: 4px; bottom: 10px;}
 .tit > h2{display: inline; font-size: 18px; line-height: 21px;}
-
-
 .cont > .inner-wrap{transform: translateY(-64px);}
-
 .box_1{padding-top: 25px;}
 .box_1 .tit-box{width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 0 20px;}
 .box_1 .tit-box > span{line-height: 18px;}
@@ -39,10 +27,6 @@ section{background-color: #F7F7F7;}
 .box_1 .text-box{width: 100%; display: flex; justify-content: space-between;align-items: center; margin-bottom: 32px;padding: 0 20px; }
 .box_1 .text-box > .bank{display: flex;align-items: center;}
 .box_1 .text-box > .bank >img{width: 25px; margin-right: 8px;}
-
-
-
-
 .box-tit{display: flex; justify-content: space-between; margin: 32px 4px 16px 4px;}
 .box-tit h2{font-size: 18px;}
 .box-tit > span{color: #707070;}
@@ -50,9 +34,6 @@ section{background-color: #F7F7F7;}
 .box_2{height: 324px;padding-top: 24px; }
 .box_2 img{width: 25px;}
 .box_2 > .line{margin: 20px 0;}
-
-
-
 .box_3{height: 348px; margin-top: 32px; padding: 24px 20px 0 20px;}
 .box_3 > .tit-box> span{color: #707070;}
 .box_3 > .fix_pay{margin-top: 32px;}

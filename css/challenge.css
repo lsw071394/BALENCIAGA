@@ -3,16 +3,12 @@ body{background-color: #F7F7F7;}
 header{background-color: #fff;box-shadow: 0 3px 8px #CDCDCD1A;}
 .line{background-color: #EFEEEE;}
 .header-wrap > .util .hamburger span{background-color: #262626;}
-
 .cont{padding-top: 40px;}
 .tit{font-size: 18px; }
 .select-num{display: inline-block;margin-left: 8px;font-size: 18px;}
 .select-num span{color: #3262FF;}
-
 .box_1{height: 220px; margin-top: 24px; padding-top:24px;}
 .gray-on{filter: grayscale(1);}
-
-
 .challenge-box{height: 48px; display: flex; justify-content: space-between; align-items: flex-end;}
 .challenge-box > .left-box img{width: 48px; }
 .challenge-box > .left-box > .pay{display: inline-block; margin-left: 16px;}
@@ -20,16 +16,11 @@ header{background-color: #fff;box-shadow: 0 3px 8px #CDCDCD1A;}
 .challenge-box > .left-box > .pay>span{font-size: 20px;}
 .challenge-box >div> span{color: #707070;margin-right: 4px;}
 .challenge-box >div> span.on{color:#FC3145}
-
-
 .prog{height: 12px; margin-top: 24px; margin-bottom: 32px; width: 100%;}
 .progs{background: #32C5FF;}
-
 .gray{width: 0%; height: 100%;border-radius: 50px;background: #32C5FF;}
 .prog.gray-on > .progs{border-radius: 50px;}
 .prog-txt{display: flex; justify-content: space-between; margin: 0 4px 20px 4px; color: #262626;}
-
-
 button.chall-btn{width: 100%; height: 56px; outline: 0; border: 0;
     background-color: #32C5FF; border-radius: 8px; margin-top: 40px;
     margin-bottom: 45px;}

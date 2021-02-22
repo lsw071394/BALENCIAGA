@@ -1,26 +1,19 @@
 body{background-color: #F7F7F7;}
-
 header{background-color: #fff;box-shadow: 0 3px 8px #CDCDCD1A;}
 .line{width: 100%; height: 1px; background-color: #EFEEEE;}
-
 .header-wrap > .util .hamburger span{background-color: #262626;}
-
 .cont{ padding: 40px 0 1px 0;}
 .pay-area{position: relative; margin-bottom: 40px;}
-
 .vertical-bar{position: absolute;display: inline-block; left: 36px; width: 1px; height: 100%; background-color: #CDCDCD; z-index: -1;}
-
 .pay-tit-box{width: max-content; height: 32px; background-color: #2FC5FE;border-radius: 40px; display: flex; justify-content: space-between;align-items: center; padding:0 17px; margin-bottom: 16px;}
 .pay-tit-box span{color: #fff; font-size: 14px;}
 .vertical{ width: 1px; height: 12px; background-color: #F7F7F7; opacity: .5; margin: 0 24px;}
-
 .box_1,.box_2{width: 100%; height: 80px;margin-bottom: 12px; padding: 19px 0;display: block;}
 .box_2{padding: 19px 20px 0 20px;}
 .box_2 p{margin-bottom: 8px; display: flex;align-items: center;}
 .box_2 p span{margin: 0 4px;}
 .box_2 p img{width: 15px;}
 .box_2 > span{color: #707070;font-size: 14px;opacity: 67%;}
-
 .box_3{width: 100%; height: 200px;margin-bottom: 12px; padding-top: 24px;display: block;}
 .box_3 >p {margin-left: 20px;}
 .box_3 .line{margin: 24px 0 32px 0;}

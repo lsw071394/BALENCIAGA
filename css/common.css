@@ -1,9 +1,7 @@
 html,body{font-family: 'NanumSquare', sans-serif;font-size: 16px; font-weight: 600; color: #262626;}
-
 body{position: relative; width: 100%; height: 100vh; padding-top: 64px; z-index: 1;}
 .inner-wrap{position: relative; width: 89.33%; margin:0 auto;}
 button{font-size: 16px;}
-
 /* header */
 header{position: fixed;width: 100%; top: 0; left: 0;z-index: 1;box-shadow: 0 3px 8px #CDCDCD1A;}
 .header-wrap{margin: 0 4px; height: 64px; display: flex; text-align: center; justify-content: space-between; align-items: center; padding: 22px 0;}
@@ -14,15 +12,11 @@ header{position: fixed;width: 100%; top: 0; left: 0;z-index: 1;box-shadow: 0 3px
 .util li{float: left; margin-left: 20px;}
 .util .home{display: inline-block; width: 25px; height: 25px; background-image: url(../img/home.png);}
 .util img{width: 25px;}
-
 .util .hamburger{display: inline-block; width: 25px; height: 25px;padding: 3px 0;  }
 .util .hamburger span{display:block; width: 24px; height: 2px;margin-bottom: 6px;background-color: #fff;}
 .hamburger.act span:nth-child(1){transform: translateY(8px) rotate(45deg); transition: .2s ease-in-out;}
 .hamburger.act span:nth-child(2){visibility: hidden;}
 .hamburger.act span:nth-child(3){transform: translateY(-8px) rotate(135deg);transition: .2s ease-in-out;}
-
-
-
 .header-wrap > a>  span{display: block; width: 12px;height: 12px; border: 2px solid #262626; border-bottom: none;border-left: none; }
 .prev{margin-left: 4px; transform: rotate(-135deg);}
 .header-wrap .month-select {position: absolute; left: 50%; transform: translateX(-50%);}
@@ -36,7 +30,6 @@ font-size: 8px; text-align: center; line-height: 12px; font-weight: 4lo00;}
 nav{ height: 100%;width: 312px;position: fixed;z-index: 4;top: 0;right: 0;background-color: #fff;overflow-x: hidden;transition: all 0.3s ease-in-out;box-shadow: -10px 0 10px #00000014 ; transform: translateX(312px);}
 nav.act{transform: translateX(0);}
 .nav-header{position: relative; width: 100%; height: 154px;background-color:#32C5FF;}
-
 .black_bg{position: fixed; top: 0; left: 0;width: 100%; height: 100%; background-color: #262626;opacity: .5; z-index: 2; visibility: hidden;}
 .nav-wrap{margin: 0 20px;font-size: 20px;height: 64px;}
 .top{display: flex; justify-content: space-between; padding-top: 21px;}
@@ -49,11 +42,9 @@ nav .hamburger span{background-color: #fff;}
 .search-box > input::-webkit-input-placeholder{color: #b8b8b8;}
 .search-box > button{width: 50px; border: none; outline: none;background-color: #fff; border-radius: 0 4px 4px 0}
 .search-box > button img{width: 20px;}
-
 .nav-body h2{display: block; margin-left: 20px;padding-top: 32px;font-size: 20px; font-weight: 800;}
 .nav-line{width: 100%; height: 1px;margin: 12px 0 20px 0; background-color: #DDDDDD;}
 .li-line{width: 100%; height: 1px; margin:20px 0; background-color: #f7f7f7;}
-
 .nav-body ul  a{display: block; width: 100%;}
 .nav-body ul > li{ margin-left: 20px; font-weight: 400;}
 .nav-body ul > li a{color:#707070; font-size: 18px;}
@@ -71,7 +62,6 @@ nav .hamburger span{background-color: #fff;}
   box-shadow: 0 3px 10px #5DD1FF80;}
 .side-remote > .arrow{display: inline-block; width: 8px;height: 8px;border: 2px solid #fff; border-left: 0;border-bottom: 0; position: absolute;top: calc(50% - 2px); left: calc(50% - 4px); transform:rotate(-45deg);}
 /* ---------------------------------------- */
-
 .line{width: 100%; height: 1px;}
 .tit-box{width: 100%; display: flex; justify-content: space-between; align-items: center;}
 .tit-box > span{line-height: 18px;}
@@ -82,15 +72,9 @@ nav .hamburger span{background-color: #fff;}
 .prog{width: 100%; border-radius: 50px;background: #dddddd; }
 .progs{width: 0%; height: 100%;border-radius: 50px 0 0 50px;}
 .prog-text{display: flex; justify-content: space-between; margin-top: 13px;}
-
-
 /* box */
 .box{width: 100%; background-color: #fff; border-radius: 8px; box-shadow: 0 3px 8px #00000029;overflow: hidden;}
-
-
-
 /* pay-box */
-
 .pay-box{display: flex; justify-content: space-between; align-items: center;margin: 0 20px;}
 .pay-box > .left-box{display: flex; align-items: center;}
 .pay-box > .left-box img{width: 25px; }
@@ -100,7 +84,6 @@ nav .hamburger span{background-color: #fff;}
 .pay-box > .left-box > .pay p{display: inline-block; font-size: 14px; color: #707070;font-weight: 400;}
 /* .pay-box > span{margin-top: 10px; } */
 .pay-box > .left-box > .pay>span:after{content: ''; display: inline-block; width: 1px; height: 12px; border-right: 1px solid #CDCDCD; margin:0 3px 0 4px;transform: translateY(1px);}
-
 /* color */
 .green{color: #00C04D;}
 .red{color: #FC3145;}
@@ -111,8 +94,6 @@ nav .hamburger span{background-color: #fff;}
 /* font-weight */
 .regular{font-weight: 400;}
 .exbold{font-weight: 800;}
-
-
 /* animation */
 .opacity{-webkit-animation: opa .5s ease-in-out;}
 @-webkit-keyframes opa{
@@ -123,30 +104,14 @@ nav .hamburger span{background-color: #fff;}
       opacity: 1;
       }
   }
-
-
 .vibe{-webkit-animation: viber 1s ease-in-out;}
 .vibein{-webkit-animation: vibe .5s infinite alternate-reverse;}
-
 @-webkit-keyframes viber{
     0%{transform: scale(1);}
     30%{transform: scale(1.3) rotate(-25deg);}
     60%{transform: scale(1.3) rotate(25deg);}
     100%{transform: scale(1) rotate(0deg);}
 }
-
-
-.dive{-webkit-animation: diving 1s;}
-
-@-webkit-keyframes diving{
-  0%{top: -300px; visibility: visible;}
-  70%{top: 0;transform: rotate(0);}
-  75%{transform: rotate(15deg);}
-  95%{transform: rotate(-15deg);}
-  100%{transform: rotate(0);}
-}
-
-
 /* report month */
 .month-slide{width: 100%; height: 60px; border-bottom: 1px solid #EFEEEE; z-index: 1;background-color: #f7f7f7;}
 .month-slide .flex-container{height: 60px; display: flex; justify-content: space-between;align-items: center;}
@@ -156,11 +121,7 @@ nav .hamburger span{background-color: #fff;}
 .month-slide .flex-container .next{margin-right: 4px; transform: rotate(45deg);}
 .month-slide .flex-container .next.grayE6{border-color: #E6E6E6}
 .month-slide .flex-container p{font-size: 18px; color: #707070;}
-
 .visible{visibility: hidden;}
-
-
-
 
 @media screen and (max-width: 320px) {
   html,body{font-size: 13px;}
