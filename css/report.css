@@ -95,9 +95,15 @@ border-radius: 3px;}
 .challenge-before img{width: 25px; margin-top: 8px; }
 .mt40{margin-top: 40px;}
 .none-report{text-align: center; margin-top: 100px; color: #707070;}
+
+
 @media screen and (max-width: 320px) {
     .box_2 button{height: 46px; font-size: 13px;}
     .card-banner .text-box span b{font-size: 13px;}
     .box_2{height: 462px;}
+    .box_2 .chart-box{width: 68px; height: 24px;background-color: #fff;
+        border-radius: 80px 80px 50px 0; box-shadow: 0 3px 6px #34343429; position: absolute;top: 84px;right: 40px; font-size: 11px; color: #262626;text-align: center; line-height: 24px;font-weight: 400;opacity: 0; z-index: 1;}
+
+    .box_5 .chart-box{width: 80px; height: 24px;border-radius: 80px  80px 0 50px; position: absolute;top: 95px;right: 20px; z-index: 5;font-size: 11px; color: #fff;text-align: center; line-height: 24px;font-weight: 400;opacity: 0;}
   }
 
