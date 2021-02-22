@@ -102,7 +102,7 @@ $(function () {
 
     function onScrollWin(e) {
         _scrollTop = _this.$win.scrollTop(); // 스크롤 Y 좌표.
-        console.log(_scrollTop);
+        // console.log(_scrollTop);
         scrollMenuVisible();
         _exScrollTop = _scrollTop;
     }
@@ -112,11 +112,11 @@ $(function () {
         if (_scrollTop < 0) return;
 
         if (_scrollTop < _exScrollTop) {
-            console.log('위로');
+            // console.log('위로');
             if ($('.side-remote').hasClass('hide')) $('.side-remote').removeClass('hide');
 
         } else {
-            console.log('아래로');
+            // console.log('아래로');
             if (!$('.side-remote').hasClass('hide')) $('.side-remote').addClass('hide');
         }
         if (_scrollTop <= 0) {
