@@ -65,14 +65,66 @@ $(function () {
 
             });
     });
-    // 사이드 리모트 show/hide
-    var sc = window.scrollY;
-    $(window).scroll(function () {
-        var sc = $(document).scrollTop();
-        if (sc < 210) {
-            $('.side-remote').hide(500);
-        } else { $('.side-remote').show(500) }
-    })
+
+
+    // 사이드 리모트 show / hide
+    // var scy = 0;
+    // $(window).scroll(function () {
+    //     var sc = $(this).scrollTop();
+    //     console.log(sc)
+    //     if (sc < 210) {
+    //         $('.side-remote').hide(500);
+    //     }
+    //     else { $('.side-remote').show(500) }
+    // })
+
+
+    var _this = this;
+    var _scrollTop = 0;
+    var _exScrollTop = null;
+    var _isAni = void 0; // undefined 강제 지정
+    function init() {
+        layout();
+        setting();
+        addEvent();
+    }
+    function layout() {
+        _this.$win = $(window);
+        _this.$scroll = $('html, body');
+    }
+
+    function setting() {
+        _isAni = false;
+    }
+    function addEvent() {
+        _this.$win.on('scroll', onScrollWin).trigger('scroll');
+    }
+
+    function onScrollWin(e) {
+        _scrollTop = _this.$win.scrollTop(); // 스크롤 Y 좌표.
+        console.log(_scrollTop);
+        scrollMenuVisible();
+        _exScrollTop = _scrollTop;
+    }
+
+    function scrollMenuVisible() {
+        if (_exScrollTop === null) return;
+        if (_scrollTop < 0) return;
+
+        if (_scrollTop < _exScrollTop) {
+            console.log('위로');
+            if ($('.side-remote').hasClass('hide')) $('.side-remote').removeClass('hide');
+
+        } else {
+            console.log('아래로');
+            if (!$('.side-remote').hasClass('hide')) $('.side-remote').addClass('hide');
+        }
+        if (_scrollTop <= 0) {
+            $('.side-remote').addClass('hide')
+        }
+    }
+    init();
+
 
     $('a.side-remote').on('click', function (e) {
         e.preventDefault();
@@ -80,6 +132,10 @@ $(function () {
             scrollTop: 0
         }, 600);
     })
+
+
+
+
     // 챌린지 아이템 체크 ------------------
     var $checkItem = $('.select').length + 3;
     $('.checkCount').html($checkItem); //로딩시 초기 셋팅(3개 선택)

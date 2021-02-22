@@ -22,7 +22,7 @@ text-align: center;}
 .flex-box .box_item span{display: inline-block; margin-top: 32px;}
 .flex-box .box_item p{margin-top: 36px; color: #707070;line-height: 18px;}
 .right span{float: right;}
-.right span:after{content: ''; display: inline-block; width: 6px; height: 6px; border: 1px solid ; border-left: none; border-bottom: none;  transform:translateY(-2px) rotate(45deg); margin-left: 6px;}
+.right span:after{content: ''; display: inline-block; width: 6px; height: 6px; border: 2px solid ; border-left: none; border-bottom: none;  transform:translateY(-2px) rotate(45deg); margin-left: 6px;}
 .pay-tit{margin-top: 38px;}
 .pay-wrap{margin-top: 22px;}
 .pay-area{position: relative; margin-bottom: 40px;}
