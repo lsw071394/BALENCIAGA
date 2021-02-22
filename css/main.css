@@ -42,7 +42,6 @@ section{background-color: #F7F7F7;}
 
 
 
-.pay-box > .left-box > .pay>span:after{content: ''; display: inline-block; width: 1px; height: 12px; border-right: 1px solid #CDCDCD; margin-left: 4px;transform: translateY(1px);}
 
 .box-tit{display: flex; justify-content: space-between; margin: 32px 4px 16px 4px;}
 .box-tit h2{font-size: 18px;}

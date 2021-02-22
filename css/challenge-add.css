@@ -71,10 +71,11 @@ input::placeholder{color: #262626;font-weight: 800;font-family: 'NanumSquare', s
 .pay-box > .left-box img{width: 25px;}
 .pay-box > .left-box > .pay{display: inline-block; margin-left: 12px;}
 .pay-box > .left-box > .pay h3{ margin-bottom: 8px;}
-.pay-box > .left-box > .pay>span{font-size: 14px; color: #707070;}
+.pay-box > .left-box > .pay>p{font-size: 14px; color: #949494;}
 .pay-box > span{margin-top: 10px; }
 .prog-text{margin: 24px 4px 0 4px; }
 .blue{color: #3262FF;}
+
 
 /* --03 */
 

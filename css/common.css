@@ -99,7 +99,7 @@ nav .hamburger span{background-color: #fff;}
 .pay-box > .left-box > .pay>span{font-size: 14px; color: #707070;font-weight: 400; opacity: 67%;}
 .pay-box > .left-box > .pay p{display: inline-block; font-size: 14px; color: #707070;font-weight: 400;}
 /* .pay-box > span{margin-top: 10px; } */
-
+.pay-box > .left-box > .pay>span:after{content: ''; display: inline-block; width: 1px; height: 12px; border-right: 1px solid #CDCDCD; margin:0 3px 0 4px;transform: translateY(1px);}
 
 /* color */
 .green{color: #00C04D;}
@@ -158,3 +158,14 @@ nav .hamburger span{background-color: #fff;}
 .month-slide .flex-container p{font-size: 18px; color: #707070;}
 
 .visible{visibility: hidden;}
+
+
+
+
+@media screen and (max-width: 320px) {
+  html,body{font-size: 13px;}
+  nav{ height: 100%;width: 260px;position: fixed;z-index: 4;top: 0;right: 0;background-color: #fff;overflow-x: hidden;transition: all 0.3s ease-in-out;box-shadow: -10px 0 10px #00000014 ; transform: translateX(260px);}
+  .nav-body ul > li a{color:#707070; font-size: 14px;}
+  .pay-box > .left-box > .pay>span{font-size: 12px; color: #707070;font-weight: 400; opacity: 67%;line-height: 12px;}
+  .pay-box > .left-box > .pay p{display: inline-block; font-size: 12px; color: #707070;font-weight: 400; line-height: 16px;}
+}

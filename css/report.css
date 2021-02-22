@@ -132,3 +132,10 @@ border-radius: 3px;}
 .mt40{margin-top: 40px;}
 
 .none-report{text-align: center; margin-top: 100px; color: #707070;}
+
+
+@media screen and (max-width: 320px) {
+    .box_2 button{height: 46px; font-size: 13px;}
+    .card-banner .text-box span b{font-size: 13px;}
+    .box_2{height: 462px;}
+  }

@@ -127,7 +127,10 @@
                                 <span>식비</span>
                             </div>
                         </div>
-                        <span>25%</span>
+                        <div>
+                            <span class="counter" data-count="25"></span><span>%</span>
+                        </div>
+
                     </div>
                     <div class="prog">
                         <div class="progs" id="progressing" per="25"></div>
@@ -148,11 +151,13 @@
                         <div class="left-box">
                             <img src="./img/report-result/result-icon3.png" alt="subway">
                             <div class="pay">
-                                <h3>도전중!</h3>
+                                <h3 class="blue">도전중!</h3>
                                 <span>교통</span>
                             </div>
                         </div>
-                        <span>83%</span>
+                        <div>
+                            <span class="counter" data-count="83"></span><span>%</span>
+                        </div>
                     </div>
                     <div class="prog">
                         <div class="progs" id="progressing" per="83"></div>
@@ -167,20 +172,23 @@
                     </div>
                 </div>
             </div>
-            <div class="box box_1">
+            <div class="box box_1" id="gray">
                 <div class="inner-wrap">
                     <div class="challenge-box">
                         <div class="left-box">
-                            <img class="gray-on" src="./img/report-result/result-icon1.png" alt="shop">
-                            <div class="pay gray-on">
-                                <h3>다음 기회에...</h3>
+                            <img src="./img/report-result/result-icon1.png" alt="shop">
+                            <div class="pay">
+                                <h3 class="blue">도전중!</h3>
                                 <span>쇼핑</span>
                             </div>
                         </div>
-                        <span class="on">실패</span>
+                        <div class="change-red">
+                            <span id="counter-gray" data-count="100"></span><span>%</span>
+                        </div>
+
                     </div>
-                    <div class="prog gray-on">
-                        <div class="progs" id="progressing" style="width: 100%;"></div>
+                    <div class="prog">
+                        <div class="gray" id="progressing" per="100"></div>
                     </div>
                     <div class="prog-txt">
                         <p>목표 금액</p>
@@ -211,9 +219,68 @@
                 $this.animate({
                     width: per + "%"
                 }, 1200);
+            });
+
+            var isVisible = false;
+            $(window).on('scroll', function () {
+                if (checkVisible($('.chall-btn')) && !isVisible) {
+
+                    $('.gray').each(function () {
+                        var $this = $(this);
+                        var per = $this.attr('per');
+                        $this.animate({
+                            width: per + "%"
+                        }, 1200, function () {
+                            if (per = 100) {
+                                $("#gray .left-box img").addClass('gray-on');
+                                $(".gray").addClass('gray-on');
+                                $("#gray .pay h3").removeClass('blue');
+                                $("#gray .pay h3").html('다음 기회에...');
+                                $("#gray .change-red").children().remove();
+                                $("#gray .change-red").append("<span class=" + 'on' + ">실패</span>")
+                            }
+                        });
+                    });
+                    $('#counter-gray').each(function () {
+                        var $this = $(this),
+                            countTo = $this.attr('data-count');
+                        $({ countNum: $this.text() }).animate({
+                            countNum: countTo
+                        },
+                            {
+                                duration: 1000,
+                                easing: 'linear',
+                                step: function () {
+                                    $this.text(Math.floor(this.countNum));
+                                },
+                                complete: function () {
+                                    $this.text(this.countNum);
+                                    //alert('finished');
+                                }
+
+                            });
+                    });
+                };
 
             });
-        })
+
+            function checkVisible(elm, eval) {
+                eval = eval || "object visible";
+                var viewportHeight = $(window).height(), // Viewport Height
+                    scrolltop = $(window).scrollTop(), // Scroll Top
+                    y = $(elm).offset().top,
+                    elementHeight = $(elm).height();
+
+                if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
+                if (eval == "above") return ((y < (viewportHeight + scrolltop)));
+
+            }
+
+
+        });
+
+
+
     </script>
 </body>
 
